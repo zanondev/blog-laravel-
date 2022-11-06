@@ -1,0 +1,30 @@
+@import (css)
+    url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@textColor: #686868;
+@blueColor: #00b0fc;
+@titleColor: #2c2c2c;
+@grayColor: #a1a1a1;
+
+.title-style(@fontSize: 29px, @lineHeight: 32px, @marginBottom: 40px) {
+    color: @titleColor;
+    font-weight: 700;
+    font-size: @fontSize;
+    line-height: @lineHeight;
+    margin-bottom: @marginBottom;
+}
+
+.text-style() {
+    color: @textColor;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 180%;
+}
+
+.soft-transition (@time: 0.2s, @effect: ease) {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 50);
+    -webkit-transition: all @time @effect;
+    -moz-transition: all @time @effect;
+    -o-transition: all @time @effect;
+    transition: all @time @effect;
+}

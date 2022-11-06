@@ -1,0 +1,51 @@
+@import "variables.less";
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+br {
+    clear: both;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    .text-style();
+}
+
+ul {
+    list-style: none;
+} //retira o estilo padrao de lista pra todo o codigo
